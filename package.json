@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-moment-transform",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "The default blueprint for ember-cli addons.",
   "directories": {
     "doc": "doc",
@@ -11,7 +11,7 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/pk4media/ember-cli-moment-transform",
   "engines": {
     "node": ">= 0.10.0"
   },

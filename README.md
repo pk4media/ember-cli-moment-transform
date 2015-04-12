@@ -1,8 +1,22 @@
 # Ember-cli-moment-transform
 
-This README outlines the details of collaborating on this Ember addon.
+[moment.js](momentjs.com) attribute transformers for ember data
 
-## Installation
+## Usage
+
+* `ember install:addon ember-cli-moment-transform`
+
+Use local browser timezone
+```javascript
+foo: DS.attr('moment')
+```
+
+Use UTC instead of local browser timezone
+```javascript
+foo: DS.attr('moment-utc')
+```
+
+## Development
 
 * `git clone` this repository
 * `npm install`
