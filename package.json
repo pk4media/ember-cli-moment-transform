@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-moment-transform",
   "version": "0.1.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Moment.js Ember Data attribute transformers",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -9,7 +9,7 @@
   "scripts": {
     "start": "ember server",
     "build": "ember build",
-    "test": "ember try:testall"
+    "test": "ember test"
   },
   "repository": "https://github.com/pk4media/ember-cli-moment-transform",
   "engines": {
