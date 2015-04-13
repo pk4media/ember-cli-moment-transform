@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-moment-transform",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Moment.js Ember Data attribute transformers",
   "directories": {
     "doc": "doc",
