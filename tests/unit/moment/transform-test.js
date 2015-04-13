@@ -31,9 +31,16 @@ test("it does not deserialize invalid data", function(assert) {
   assert.equal(result, null);
 });
 
-test('it does not produce a utc moment object', function(assert) {
+test('it does not deserialize to a utc moment object', function(assert) {
   assert.expect(1);
   var transform = this.subject();
   var result = transform.deserialize(moment().toISOString());
   assert.equal(result.isUTC(), false);
+});
+
+test('it serializes an ISO date string', function(assert) {
+  assert.expect(1);
+  var transform = this.subject();
+  var now = moment();
+  assert.equal(transform.serialize(now), now.toISOString());
 });
