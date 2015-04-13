@@ -4,7 +4,7 @@
 
 ## Usage
 
-* `ember install:addon ember-cli-moment-transform`
+* `ember install ember-cli-moment-transform`
 
 Use local browser timezone
 ```javascript
