@@ -4,7 +4,7 @@ import moment from 'moment';
 export default DS.Transform.extend({
   deserialize: function(serialized) {
     if (serialized) {
-      let result = moment(serialized);
+      let result = moment(serialized, moment.ISO_8601);
       if (moment.isMoment(result) && result.isValid()) {
         return result;
       }
