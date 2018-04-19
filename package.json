@@ -2,52 +2,59 @@
   "name": "ember-cli-moment-transform",
   "version": "1.0.0",
   "description": "Moment.js Ember Data attribute transformers",
+  "keywords": [
+    "ember-addon",
+    "moment",
+    "moment-transform",
+    "transform"
+  ],
+  "license": "MIT",
+  "author": "David Negstad <davidn@pk4media.com> (https://github.com/dnegstad)",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "scripts": {
-    "reload": "rm -rf dist node_modules bower_components tmp && npm cache clean && bower cache clean && npm install && bower install",
-    "start": "ember server",
-    "build": "ember build",
-    "test": "ember test"
-  },
   "repository": "https://github.com/pk4media/ember-cli-moment-transform",
-  "engines": {
-    "node": ">= 0.10.0"
+  "scripts": {
+    "build": "ember build",
+    "lint:js": "eslint ./*.js addon addon-test-support app config lib server test-support tests",
+    "start": "ember serve",
+    "test": "ember test",
+    "test:all": "ember try:each"
   },
-  "author": "David Negstad <davidn@pk4media.com> (https://github.com/dnegstad)",
-  "license": "MIT",
-  "devDependencies": {
-    "broccoli-asset-rev": "^2.4.2",
-    "ember-cli": "2.5.0",
-    "ember-cli-app-version": "^1.0.0",
-    "ember-cli-dependency-checker": "^1.2.0",
-    "ember-cli-htmlbars": "^1.0.3",
-    "ember-cli-htmlbars-inline-precompile": "^0.3.1",
-    "ember-cli-inject-live-reload": "^1.4.0",
-    "ember-cli-jshint": "^1.0.0",
-    "ember-cli-moment-shim": "^1.2.0",
-    "ember-cli-qunit": "^1.4.0",
-    "ember-cli-release": "0.2.8",
-    "ember-cli-sri": "^2.1.0",
-    "ember-cli-uglify": "^1.2.0",
-    "ember-data": "^2.3.0",
-    "ember-disable-prototype-extensions": "^1.1.0",
-    "ember-export-application-global": "^1.0.5",
-    "ember-load-initializers": "^0.5.1",
-    "ember-resolver": "^2.0.3",
-    "ember-try": "^0.2.2",
-    "loader.js": "^4.0.1",
-    "moment": "^2.13.0",
-    "moment-timezone": "^0.5.0",
-    "phantomjs-prebuilt": "^2.1.12"
-  },
-  "keywords": [
-    "ember-addon"
-  ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.6"
+    "ember-cli-babel": "^6.6.0"
+  },
+  "devDependencies": {
+    "broccoli-asset-rev": "^2.4.5",
+    "ember-cli": "~3.1.2",
+    "ember-cli-dependency-checker": "^2.0.0",
+    "ember-cli-eslint": "^4.2.1",
+    "ember-cli-htmlbars": "^2.0.1",
+    "ember-cli-htmlbars-inline-precompile": "^1.0.0",
+    "ember-cli-inject-live-reload": "^1.4.1",
+    "ember-cli-moment-shim": "^3.7.1",
+    "ember-cli-qunit": "^4.1.1",
+    "ember-cli-shims": "^1.2.0",
+    "ember-cli-sri": "^2.1.0",
+    "ember-cli-uglify": "^2.0.0",
+    "ember-data": "^3.1.1",
+    "ember-disable-prototype-extensions": "^1.1.2",
+    "ember-export-application-global": "^2.0.0",
+    "ember-load-initializers": "^1.0.0",
+    "ember-maybe-import-regenerator": "^0.1.6",
+    "ember-resolver": "^4.0.0",
+    "ember-source": "~3.1.0",
+    "ember-source-channel-url": "^1.0.1",
+    "ember-try": "^0.2.23",
+    "eslint-plugin-ember": "^5.0.0",
+    "eslint-plugin-node": "^6.0.1",
+    "loader.js": "^4.2.3",
+    "moment": "^2.13.0",
+    "moment-timezone": "^0.5.0"
+  },
+  "engines": {
+    "node": "^4.5 || 6.* || >= 7.*"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"

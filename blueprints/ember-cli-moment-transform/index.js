@@ -2,13 +2,13 @@
 'use strict';
 
 module.exports = {
-  normalizeEntityName: function() {
+  normalizeEntityName() {
     // this prevents an error when the entityName is
     // not specified (since that doesn't actually matter
     // to us
   },
 
-  afterInstall: function() {
-    return this.addAddonToProject('ember-cli-moment-shim', '^0.7.2');
+  afterInstall() {
+    return this.addAddonToProject('ember-cli-moment-shim');
   }
 };
