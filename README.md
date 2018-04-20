@@ -1,6 +1,6 @@
 # Ember-cli-moment-transform
 
-[moment.js](momentjs.com) attribute transformers for ember data [![Circle CI](https://circleci.com/gh/pk4media/ember-cli-moment-transform/tree/master.svg?style=svg&circle-token=2c626fad51fa0856a87784cff81ba504cc0e4cc3)](https://circleci.com/gh/pk4media/ember-cli-moment-transform/tree/master)
+[moment.js](momentjs.com) attribute transformers for ember data [![Build Status](https://travis-ci.org/pk4media/ember-cli-moment-transform.svg?branch=master)](https://travis-ci.org/pk4media/ember-cli-moment-transform) [![Circle CI](https://circleci.com/gh/pk4media/ember-cli-moment-transform/tree/master.svg?style=svg&circle-token=2c626fad51fa0856a87784cff81ba504cc0e4cc3)](https://circleci.com/gh/pk4media/ember-cli-moment-transform/tree/master)
 
 ## Usage
 
